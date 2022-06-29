@@ -24,6 +24,9 @@ public class UserRegistration {
         System.out.println(Pattern.matches("[A-Z a-z]{8,}", password));
         System.out.println("At least one Upper case in Password :");
         String password1 = scanner.next();
-        System.out.println(Pattern.matches("[A-Z][A-Z a-z 0-9]{8,}", password1));
+        System.out.println(Pattern.matches("[A-Z][A-Z a-z]{8,}", password1));
+        System.out.println("At least one numeric number in the password");
+        String password2=scanner.next();
+        System.out.println(Pattern.matches("[A-z a-z 0-9]{8,}[0-9]{1,}",password2));
     }
 }

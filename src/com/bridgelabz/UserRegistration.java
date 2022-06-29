@@ -13,5 +13,8 @@ public class UserRegistration {
         System.out.print("Enter Last Name :");
         String lastName=scanner.next();
         System.out.println(Pattern.matches("[A-Z][a-z]{3,}",lastName));
+        System.out.print("Enter Email :");
+        String email=scanner.next();
+        System.out.println(Pattern.matches("[a-z][A-Z a-z 0-9]+[@][a-z]+[.][a-z]{2,5}",email));
     }
 }
